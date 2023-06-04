@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-Individual_LevelIndividual_Level/[Ll]ibrary/
+Individual_Level/[Ll]ibrary/
 Individual_Level/[Tt]emp/
 Individual_Level/[Oo]bj/
 Individual_Level/[Bb]uild/
