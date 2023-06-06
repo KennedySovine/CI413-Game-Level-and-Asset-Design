@@ -13,8 +13,8 @@ public class DD_NPC_Talker : MonoBehaviour
     public string[] st_message;
     public float fl_distance = 2;
     private GameObject go_PC;
-    private GameObject go_message_panel;
-    private Text txt_window;
+    public GameObject go_message_panel;
+    public Text txt_window;
     private int in_message_stage;
     public bool bl_release_object;
     public GameObject go_release_object;
@@ -26,8 +26,6 @@ public class DD_NPC_Talker : MonoBehaviour
     {
         /// Set initial states and find objects -- The UI object atttached to Game Manager
         go_PC = GameObject.FindWithTag("Player");
-        go_message_panel = GameObject.Find("GameManager").transform.Find("SmallMessagePanel").gameObject;
-        txt_window = go_message_panel.transform.Find("SmallMessageText").GetComponent<Text>();
 
         if (bl_release_object && go_release_object) go_release_object.SetActive(false);
 
@@ -49,7 +47,7 @@ public class DD_NPC_Talker : MonoBehaviour
         if (Vector3.Distance(go_PC.transform.position, transform.position) < fl_distance)
         {
             // Enable message panel
-            if (!go_message_panel.activeInHierarchy) go_message_panel.SetActive(true);
+            go_message_panel.SetActive(true);
 
             // Step through Message
             if (Input.GetKeyDown(KeyCode.E))
