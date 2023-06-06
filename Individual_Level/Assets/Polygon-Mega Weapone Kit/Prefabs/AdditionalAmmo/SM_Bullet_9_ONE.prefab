@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8213027818560891050}
   - component: {fileID: -1911414616384556774}
   - component: {fileID: -9134628079263866857}
+  - component: {fileID: -2393278688378076803}
   m_Layer: 0
   m_Name: SM_Bullet_9_ONE
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,3 +117,16 @@ MonoBehaviour:
   fl_range: 50
   fl_speed: 30
   fl_damage: 15
+--- !u!65 &-2393278688378076803
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7708602601500477823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008008778, y: 0.009457251, z: 0.009241046}
+  m_Center: {x: -0.0000030398369, y: -0.001311044, z: 4.656613e-10}

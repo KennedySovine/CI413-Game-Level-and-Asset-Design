@@ -26,4 +26,10 @@ public class KIS_PC_Health : MonoBehaviour
         //Subtract the damage from HP
         fl_HP -= fl_damage;
     }
+    //Collider that detects projectiles
+    void OnTriggerEnter(Collider collision){
+        if (collision.gameObject.tag == "Projectile"){
+            Damage(collision.GetComponent< KIS_Projectile>().fl_damage);
+        }
+    }
 }

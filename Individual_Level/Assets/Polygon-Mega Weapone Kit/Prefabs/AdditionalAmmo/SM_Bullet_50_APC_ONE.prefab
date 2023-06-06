@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8229964927360165367}
   - component: {fileID: -288910432980356960}
   - component: {fileID: 7672250668176810571}
+  - component: {fileID: 5030613903256065956}
   m_Layer: 0
   m_Name: SM_Bullet_50_APC_ONE
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,3 +117,16 @@ MonoBehaviour:
   fl_range: 30
   fl_speed: 25
   fl_damage: 10
+--- !u!65 &5030613903256065956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581327353638700066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01451695, y: 0.040135622, z: 0.012572066}
+  m_Center: {x: 0, y: -0.0026120842, z: -0.000000015832484}

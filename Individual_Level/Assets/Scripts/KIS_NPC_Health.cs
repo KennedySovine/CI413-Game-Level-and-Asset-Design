@@ -32,6 +32,15 @@ public class KIS_NPC_Health : MonoBehaviour
     }
     //Damage Reciever
     public void Damage (float fl_damage){
+        Debug.Log("Damage Recieved");
         fl_HP -= fl_damage;
+    }
+
+    //Collider that detects projectiles
+    void OnTriggerEnter(Collider collision){
+        Debug.Log("Collision Detected");
+        if (collision.gameObject.tag == "Projectile"){
+            Damage(collision.GetComponent< KIS_Projectile>().fl_damage);
+        }
     }
 }
