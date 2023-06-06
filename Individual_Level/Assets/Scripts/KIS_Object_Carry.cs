@@ -7,17 +7,6 @@ public class KIS_Object_Carry : MonoBehaviour
     // Variables
     public float fl_activation_distance = 3F;
     public Transform tf_pc;
-    private Material mat_object;
-    private bool bl_has_RB = false;
-
-    //Start
-    private void Start(){
-        if (tf_pc == null) tf_pc = GameObject.FindWithTag("Player").transform;
-        //Check if RigidBody is attatched
-        if (GetComponent<Rigidbody>()) bl_has_RB = true;
-        tf_pc.GetComponent<KIS_PC_Range_Attack>().enabled = false;
-        
-    }
 
     void Update(){
             //Check for key press

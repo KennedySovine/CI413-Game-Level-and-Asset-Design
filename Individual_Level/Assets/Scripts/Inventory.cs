@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public bool Check(GameObject collect){
+    public bool inventoryContains(GameObject collect){
         if (items.Contains(collect)){
             return true;
         }
