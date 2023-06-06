@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    List<Collectable> inven = new List<Collectable>();
+    public List<GameObject> items = new List<GameObject>();
 
-    public void inventoryAdd(Collectable collect){
-        inven.Add(collect);
+    public void inventoryAdd(GameObject collect){
+        items.Add(collect);
     }
 
-    public void inventoryRemove(Collectable collect){
-        if (inven.Contains(collect)){
-            inven.Remove(collect);
+    public void inventoryRemove(GameObject collect){
+        if (items.Contains(collect)){
+            items.Remove(collect);
         }
     }
 
-    public bool Check(Collectable collect){
-        if (inven.Contains(collect)){
+    public bool Check(GameObject collect){
+        if (items.Contains(collect)){
             return true;
         }
         return false;
