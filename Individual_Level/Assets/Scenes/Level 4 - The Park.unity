@@ -21285,7 +21285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go_projectile: {fileID: 7708602601500477823, guid: 04e8e5808b35413459a942c8e5148e6d, type: 3}
   fl_cooldown: 0.2
-  v3_fire_Position: {x: 0.25, y: 0.5, z: 0.25}
+  v3_fire_Position: {x: 0.75, y: 0.5, z: 0.75}
   tf_PC_camera: {fileID: 1711957775}
 --- !u!114 &1733770815
 MonoBehaviour:
